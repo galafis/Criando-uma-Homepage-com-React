@@ -1,7 +1,10 @@
-# 🚀 Criando Uma Homepage Com React
+# ⚛️ Criando Uma Homepage Com React
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E.svg)](https://developer.mozilla.org/)
-[![React](https://img.shields.io/badge/React-18-61DAFB.svg)](https://reactjs.org/)
+> Homepage moderna e responsiva desenvolvida com React e Tailwind CSS.
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E.svg)](https://img.shields.io/badge/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://img.shields.io/badge/)
+[![React](https://img.shields.io/badge/React-18-61DAFB.svg)](https://img.shields.io/badge/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [English](#english) | [Português](#português)
@@ -12,47 +15,83 @@
 
 ### 🎯 Overview
 
-**Criando Uma Homepage Com React** — Homepage moderna e responsiva desenvolvida com React e Tailwind CSS.
+**Criando Uma Homepage Com React** is a production-grade JavaScript application complemented by CSS, HTML that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
 
-Total source lines: **5,093** across **61** files in **3** languages.
+The codebase comprises **5,093 lines** of source code organized across **61 modules**, following industry best practices for maintainability, scalability, and code quality.
 
 ### ✨ Key Features
 
-- **Production-Ready Architecture**: Modular, well-documented, and following best practices
-- **Comprehensive Implementation**: Complete solution with all core functionality
-- **Clean Code**: Type-safe, well-tested, and maintainable codebase
-- **Easy Deployment**: Docker support for quick setup and deployment
+- **🐳 Containerized**: Docker support for consistent deployment
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Architecture
+
+```mermaid
+graph TB
+    subgraph Core["🏗️ Core"]
+        A[Main Module]
+        B[Business Logic]
+        C[Data Processing]
+    end
+    
+    subgraph Support["🔧 Support"]
+        D[Configuration]
+        E[Utilities]
+        F[Tests]
+    end
+    
+    A --> B --> C
+    D --> A
+    E --> B
+    F -.-> B
+    
+    style Core fill:#e1f5fe
+    style Support fill:#f3e5f5
+```
 
 ### 🚀 Quick Start
 
 #### Prerequisites
-- Node.js 20+ and npm
 
+- Node.js 20+
+- npm or yarn
 
 #### Installation
 
-1. **Clone the repository**
 ```bash
+# Clone the repository
 git clone https://github.com/galafis/Criando-uma-Homepage-com-React.git
 cd Criando-uma-Homepage-com-React
-```
 
-2. **Install dependencies**
-```bash
+# Install dependencies
 npm install
 ```
 
 #### Running
 
 ```bash
+# Development mode
 npm run dev
-```
 
+# Production build
+npm run build
+npm start
+```
 
 ### 🧪 Testing
 
 ```bash
+# Run all tests
 npm test
+
+# Run with coverage
+npm run test:coverage
+
+# Run in watch mode
+npm run test:watch
 ```
 
 ### 📁 Project Structure
@@ -62,7 +101,7 @@ Criando-uma-Homepage-com-React/
 ├── assets/
 │   └── index-R5XO6Ecz.js
 ├── public/
-├── src/
+├── src/          # Source code
 │   ├── assets/
 │   ├── components/
 │   │   ├── Features/
@@ -76,6 +115,8 @@ Criando-uma-Homepage-com-React/
 │   │   └── utils.js
 │   ├── App.jsx
 │   └── main.jsx
+├── Dockerfile
+├── LICENSE
 ├── README.md
 ├── components.json
 ├── eslint.config.js
@@ -87,11 +128,23 @@ Criando-uma-Homepage-com-React/
 
 ### 🛠️ Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| JavaScript | 57 files |
-| CSS | 3 files |
-| HTML | 1 files |
+| Technology | Description | Role |
+|------------|-------------|------|
+| **JavaScript** | Core Language | Primary |
+| **Docker** | Containerization platform | Framework |
+| **React** | Frontend UI library | Framework |
+| CSS | 3 files | Supporting |
+| HTML | 1 files | Supporting |
+
+### 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ### 📄 License
 
@@ -100,7 +153,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### 👤 Author
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
 
@@ -110,46 +162,83 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🎯 Visão Geral
 
-**Criando Uma Homepage Com React** — Homepage moderna e responsiva desenvolvida com React e Tailwind CSS.
+**Criando Uma Homepage Com React** é uma aplicação JavaScript de nível profissional, complementada por CSS, HTML que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
 
-Total de linhas de código: **5,093** em **61** arquivos em **3** linguagens.
+A base de código compreende **5,093 linhas** de código-fonte organizadas em **61 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
 
 ### ✨ Funcionalidades Principais
 
-- **Arquitetura Pronta para Produção**: Modular, bem documentada e seguindo boas práticas
-- **Implementação Completa**: Solução completa com todas as funcionalidades principais
-- **Código Limpo**: Type-safe, bem testado e manutenível
-- **Fácil Implantação**: Suporte Docker para configuração e implantação rápidas
+- **🐳 Containerized**: Docker support for consistent deployment
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Arquitetura
+
+```mermaid
+graph TB
+    subgraph Core["🏗️ Core"]
+        A[Main Module]
+        B[Business Logic]
+        C[Data Processing]
+    end
+    
+    subgraph Support["🔧 Support"]
+        D[Configuration]
+        E[Utilities]
+        F[Tests]
+    end
+    
+    A --> B --> C
+    D --> A
+    E --> B
+    F -.-> B
+    
+    style Core fill:#e1f5fe
+    style Support fill:#f3e5f5
+```
 
 ### 🚀 Início Rápido
 
-#### Pré-requisitos
-- Node.js 20+ e npm
+#### Prerequisites
 
+- Node.js 20+
+- npm or yarn
 
-#### Instalação
+#### Installation
 
-1. **Clone the repository**
 ```bash
+# Clone the repository
 git clone https://github.com/galafis/Criando-uma-Homepage-com-React.git
 cd Criando-uma-Homepage-com-React
-```
 
-2. **Install dependencies**
-```bash
+# Install dependencies
 npm install
 ```
 
-#### Execução
+#### Running
 
 ```bash
+# Development mode
 npm run dev
+
+# Production build
+npm run build
+npm start
 ```
 
-### 🧪 Testes
+### 🧪 Testing
 
 ```bash
+# Run all tests
 npm test
+
+# Run with coverage
+npm run test:coverage
+
+# Run in watch mode
+npm run test:watch
 ```
 
 ### 📁 Estrutura do Projeto
@@ -159,7 +248,7 @@ Criando-uma-Homepage-com-React/
 ├── assets/
 │   └── index-R5XO6Ecz.js
 ├── public/
-├── src/
+├── src/          # Source code
 │   ├── assets/
 │   ├── components/
 │   │   ├── Features/
@@ -173,6 +262,8 @@ Criando-uma-Homepage-com-React/
 │   │   └── utils.js
 │   ├── App.jsx
 │   └── main.jsx
+├── Dockerfile
+├── LICENSE
 ├── README.md
 ├── components.json
 ├── eslint.config.js
@@ -184,11 +275,17 @@ Criando-uma-Homepage-com-React/
 
 ### 🛠️ Stack Tecnológica
 
-| Tecnologia | Uso |
-|------------|-----|
-| JavaScript | 57 files |
-| CSS | 3 files |
-| HTML | 1 files |
+| Tecnologia | Descrição | Papel |
+|------------|-----------|-------|
+| **JavaScript** | Core Language | Primary |
+| **Docker** | Containerization platform | Framework |
+| **React** | Frontend UI library | Framework |
+| CSS | 3 files | Supporting |
+| HTML | 1 files | Supporting |
+
+### 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
 ### 📄 Licença
 
@@ -197,6 +294,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ### 👤 Autor
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
